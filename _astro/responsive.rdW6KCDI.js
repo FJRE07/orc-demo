@@ -1,0 +1,1 @@
+function e(e,t,n){let r=e.parentElement,i=e.nextElementSibling,a=matchMedia(`(max-width: 767px)`);function o(){if(a.matches){let n=t();n&&e.parentElement!==n.padre&&n.padre.insertBefore(e,n.antes??null)}else e.parentElement!==r&&r.insertBefore(e,i),n?.()}return a.addEventListener(`change`,o),o}export{e as t};
