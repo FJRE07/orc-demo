@@ -1,0 +1,1 @@
+var e=null;function t(){return e??=fetch(`/orc-demo/datos/indice.json`).then(e=>{if(!e.ok)throw Error(`HTTP ${e.status}`);return e.json()}).catch(t=>{throw e=null,t}),e}export{t};

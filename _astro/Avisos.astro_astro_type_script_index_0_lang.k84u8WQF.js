@@ -1,0 +1,1 @@
+import{t as e}from"./estado.DUTg-lei.js";var t=document.querySelector(`[data-avisos]`);document.addEventListener(e.aviso,e=>{if(!t)return;let n=document.createElement(`div`);n.className=`aviso`,n.textContent=String(e.detail),t.append(n),requestAnimationFrame(()=>n.classList.add(`visible`)),setTimeout(()=>{n.classList.remove(`visible`),setTimeout(()=>n.remove(),300)},3200)});
